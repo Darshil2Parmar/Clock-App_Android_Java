@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AlarmFragment">
+
+    <!--    <TimePicker-->
+<!--        android:id="@+id/timePicker"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/cardHe2"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginHorizontal="15dp"-->
+<!--        android:timePickerMode="spinner"-->
+<!--        android:background="@drawable/roundedc3" />-->
+
+<!--    <Switch-->
+<!--        android:id="@+id/toggleButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/timePicker"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:checked="false"-->
+<!--        android:onClick="onAlarmClick"-->
+<!--        android:textSize="18sp"-->
+<!--        tools:ignore="UseSwitchCompatOrMaterialXml" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/toggleButton"-->
+<!--        android:id="@+id/textNoAlarm"-->
+<!--        android:textSize="30dp"-->
+<!--        android:text="No Alarm Today"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_margin="15dp"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/button_timepicker"-->
+<!--        android:layout_below="@+id/textNoAlarm"-->
+<!--        android:backgroundTint="@color/yellow"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Set Alarm Now!"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/button_cancel"-->
+<!--        android:backgroundTint="@color/red"-->
+<!--        android:layout_below="@+id/button_timepicker"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Cancel Alarm"-->
+<!--        />-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHe2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/dtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedc2"
+            android:text="@string/alarmTxt"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="No Alarm set"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="openApp"
+        android:text="open time picker" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="cancel alarm" />
+<!--
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_below="@+id/btn_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Alarm"/>-->
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.WorldclockFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/dtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedc2"
+            android:text="@string/tab4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_back"
+        android:layout_marginHorizontal="10dp"
+        android:padding="20dp"
+        android:elevation="10dp"
+        android:layout_below="@+id/cardWc">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tx1"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/border"
+        android:layout_marginVertical="10dp"
+        android:text="Current Time" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedlightgreen"
+        android:layout_below="@+id/tx1"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="20dp"
+        android:padding="8dp"
+        android:id="@+id/txtCurrentTime"
+        android:textSize="20dp"
+        android:elevation="10dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="10dp"
+        android:text="" />
+
+        <View
+            android:layout_below="@+id/txtCurrentTime"
+            android:layout_marginVertical="40dp"
+            android:id="@+id/line1"
+            style="@style/Divider"/>
+
+
+        <Spinner
+            android:id="@+id/spin1"
+            style="@style/spinner_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:elevation="5dp"
+            android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timezone"
+        android:layout_below="@+id/spin1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedpink"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:padding="8dp"
+        android:elevation="5dp"
+        android:textAlignment="center"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timezone"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:id="@+id/txtTimeZoneTime"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

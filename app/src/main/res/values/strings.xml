@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Clock App</string>
+    <string name="title1">Analog Time</string>
+    <string name="title2">Digital Time</string>
+    <string name="alarmTxt">Alarm</string>
+    <string name="startwatch">00:00:00</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="reset">Reset</string>
+    <string name="tab1">Time</string>
+    <string name="tab2">Alarm</string>
+    <string name="tab21">Digital</string>
+    <string name="tab3">Timer</string>
+    <string name="tab4">World Clock</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="worldClock1">World Clock Dead!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

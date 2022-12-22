@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StopwatchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/dtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedc2"
+            android:text="@string/stopwatch"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardSt"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="30dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:paddingBottom="20dp"
+            android:text="@string/startwatch"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:text="@string/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardTv"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/red2"
+        app:cornerRadius="20dp"
+        android:elevation="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:text="@string/pause"
+        android:backgroundTint="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btStart"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btPause"
+        android:layout_marginHorizontal="20dp"
+        app:cornerRadius="20dp"
+        android:elevation="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:text="@string/reset"
+        android:backgroundTint="@color/darkgreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btPause"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btReset"
+        android:layout_marginHorizontal="20dp"
+        app:cornerRadius="20dp"
+        android:elevation="20dp"/>
+</RelativeLayout>
